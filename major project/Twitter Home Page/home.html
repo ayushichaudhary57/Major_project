@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="file:///E:/Twitter/Twitter%20Login%20Page/index.html"> -->
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="section-1" id="blur1">
+            <br><br>
+            <div class="logo">
+                <i class="ri-twitter-fill"></i>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="home-left"><i class="ri-home-7-line"></i>
+                            <p>Home</p>
+                        </a></li>
+
+                    <li><a href="#" class="home-left"><i class="ri-search-2-line"></i>
+                            <p>Explore</p>
+                        </a></li>
+
+                    <li><a href="#" class="home-left"><i class="ri-notification-line"></i>
+                            <p>Notifications</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-mail-line"></i>
+                            <p>Messages</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-file-list-2-line"></i>
+                            <p>Lists</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-group-line"></i>
+                            <p>Communities</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-twitter-line"></i>
+                            <p>Premium</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-user-line"></i>
+                            <p>Profile</p>
+                        </a></li>
+                    <li><a href="#" class="home-left"><i class="ri-more-line"></i>
+                            <p>More</p>
+                        </a></li>
+
+                    <!-- <li><a href="#"><img src="" alt="">
+                            <p></p>
+                        </a></li> -->
+
+
+                    <a href="#" class="button-head">
+                        <div href="#" class="button" id="post" onclick="toggle()">Post</div>
+                    </a>
+                </ul>
+            </div>
+            <div class="header-id">
+                <img src="pd.jpeg" alt="" class="header-id-review">
+                <div class="header-id-name">
+                    <h4>Ayushi Chaudhary</h4>
+                    <p>@Ayushi_chaudhary</p>
+                </div>
+                <i class="ri-more-fill"></i>
+            </div>
+        </div>
+        <div class="section-2">
+          <div id="blur4">
+            <!-- <header>
+                Home
+            </header> -->
+            <div class="header-links">
+                <br><br>
+                <ul>
+                    <li><a href="">For You</a></li>
+                    <li><a href="">Following</a></li>
+                </ul>
+            </div>
+          </div>
+            <div class="div-1">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="pd.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="div-1-right">
+                    <div class="everyone-button">
+                        <p>Everyone</p>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <input type="text" name="" id="textbar" placeholder="What is happening?!">
+                    <div class="Reply-button">
+                        <i class="ri-earth-fill"></i>
+                        <a href="">Everyone can reply</a>
+                    </div>
+                    <div class="reply-bottom-border"></div>
+                </div>
+            </div>
+
+
+
+            <div class="section2-upload">
+                <div class="Upload-container">
+                    <div class="upload-container-add-title">
+                        <input type="text" id="title" placeholder="Add Title">
+                    </div>
+                  
+
+                    <input type="file" accept="image/*" name="image" id="file" style="display: none"
+                        onchange="loadFile(event)">
+
+                    <label for="file" class="select-image">
+                        <i class="ri-upload-cloud-2-line">Selecet Image</i></label>
+
+                  <div class="section2-upload-container-button">
+                    <a href="#">
+                        <div class="upload-container-add-button" id="post-pop-up" onclick="toggle()">Post</div>
+                    </a>
+                    <a href="#"><div class="upload-container-add-button" id="remove-pop-up" onclick="toggle()">Cancel</div></a>
+                  </div>
+                </div>
+
+
+
+
+                <div class="section2-upload-inner"  id="blur2">
+                    <div class="section2-upload-left"><img src="./pd.jpeg" alt=""></div>
+                    <div class="section2-upload-right">
+                        <div class="section2-upload-right-username">Ayushi Chaudhary</div>
+                        <div class="section2-upload-right-description" id="prev-text">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Soluta exercitationem, beatae mollitia tempora facilis ea et dolorem nobis
+                            non minus.</div>
+                        <div class="section2-upload-right-image" id="imgbox"><img src=""></div>
+                        <div class="section2-upload-like-comment">
+                           <div>
+                            <i class="ri-heart-fill" onclick="changeicon1(this)"></i>
+                            <input type="number" id="input1" value="0" name="" class="input">
+                            </div>
+
+                            <div>
+                                <i class="ri-dislike-fill" onclick="changeicon2(this)"></i>
+                                <input type="number" id="input2" value="0" name="" class="input">
+                            </div>
+                            
+                            <div>
+                                <i class="ri-chat-1-line"></i>
+                                <input type="number" id="input3" value="0" name="" class="input">
+                            </div>
+
+                            <div>
+                                <i class="ri-loop-right-line"></i>
+                                <input type="number" id="input4" value="0" name="" class="input">
+                            </div>
+
+                            <div>
+                                <i class="ri-share-line"></i>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section-3" id="blur3">
+            <div class="searchbar-icon-parent">
+                <div class="serachbar-icon-container">
+                    <i class="ri-search-line"></i>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="section-3-right-2">
+                <h3 class="section-3-right-2-1">Subscribe to Premium</h3>
+                <p class="section-3-right-2-2">Subscribe to unlock new features and if eligible, receive a share of ads
+                    revenue.</p>
+                <a href="" class="section-3-right-2-3-button">
+                    <button class="section-3-right-2-3">Subscribe</button><br><br>
+                </a>
+            </div>
+            
+            <div class="section-3-right-3">
+                <div class="section-3-right-3-0">
+                    <h3>
+                        What’s happening
+                    </h3>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="section-3-right-3-1">
+                    <div class="section-3-right-3-1-left ">
+                        <p>Fashion . Live</p>
+                        <h4>Paris Fashion Week 2023</h4>
+                    </div>
+                    <!-- <div class="section-3-right-3-1-right"><img src="./paris_fashion.png" alt=""></div> -->
+                </div>
+                <div class="section-3-right-3-2">
+                    <div>
+                        <p>Trending in India</p>
+                        <h4>Emergency</h4>
+                        <p>Trending with <a href=""> Emergency</a></p>
+                    </div>
+
+                    <div>
+                        <p>Trending in India</p>
+                        <h4>#Shivaji</h4>
+                        <p>300k posts</p>
+                    </div>
+
+                    <div>
+                        <p>Entertainment</p>
+                        <h4>SaiPallavi</h4>
+                        <p>Trending with <a href=""> Sita1,#Yash</a></p>
+
+                    </div>
+                    <div>
+                        <p>Trending in Gaming</p>
+                        <h4>GTA 6</h4>
+                        <p>5,433 posts</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
